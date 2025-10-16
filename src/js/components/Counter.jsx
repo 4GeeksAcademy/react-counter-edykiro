@@ -7,6 +7,8 @@ const Counter = () => {
 
   const [countState,setCountState] = useState(true);
 
+  let TimerNumbers = counter.toString().split('')
+
   /*
   countState puede contener uno de estos 3 valores:
   0: Aumentar conteo
@@ -36,17 +38,28 @@ const Counter = () => {
   }
 
   return (
-    <>
-        <div className="card mt-3 text-center justify-content-center" style={{width:"25rem", height:"18rem"}}>
-          <div className="card-body">
-            <h5>My Precious Counter</h5>
-            <p className="card-title">Counter: {counter}</p>
+    <>  
+
+        <div className="bg-success container border border-1 rounded-3 mt-4 text-center justify-content-center col-4">
+          <div className="text-center">
+            <h5 className="mt-4">My Precious Counter</h5>
           </div>
-          <button onClick={()=>setCountState(0)} className="m-2">Start</button>
-          <button onClick={()=>setCountState(1)} className="m-2">Pause</button>
-          <button onClick={()=>setCountState(2)} className="m-2">Decrease</button>   
-          <button onClick={()=>setCountState(3)} className="m-2">Resetear</button>   
-        </div>
+          <div className="text-center">
+            <div className="row justify-content-center">
+              <div className="border border-2 m-1" style={{width:"1rem"}}>{TimerNumbers[0]}</div>
+              <div className="border border-2 m-1" style={{width:"1rem"}}>{TimerNumbers[1]}</div>
+              <div className="border border-2 m-1" style={{width:"1rem"}}>{TimerNumbers[2]}</div>
+              <div className="border border-2 m-1" style={{width:"1rem"}}>{TimerNumbers[3]}</div>
+              <div className="border border-2 m-1" style={{width:"1rem"}}>{TimerNumbers[4]}</div>
+            </div>
+            </div>
+            <div className="mb-4 mt-3">
+            <button onClick={()=>setCountState(0)} className="m-2">Start</button>
+            <button onClick={()=>setCountState(1)} className="m-2">Pause</button>
+            <button onClick={()=>setCountState(2)} className="m-2">Decrease</button>   
+            <button onClick={()=>setCountState(3)} className="m-2">Resetear</button>   
+            </div>
+          </div>
     </>
   );
 };
