@@ -7,7 +7,7 @@ const Counter = () => {
 
   const [countState,setCountState] = useState(true);
 
-  let TimerNumbers = counter.toString().split('')
+  let TimerNumbers = counter.toString().split('');
 
   /*
   countState puede contener uno de estos 3 valores:
