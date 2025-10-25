@@ -9,3 +9,49 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.box-icon{
+    background-color: white;
+    height:31px;
+    width:30px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: large;
+    border: solid red;
+    padding: 0px;
+    
+}
+
+.box{
+    background-color: white;
+    height:30px;
+    width:30px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: large;
+    border: solid gray;
+
+}
+
+.box-seconds{
+    background-color: white;
+    height:30px;
+    width:90px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: large;
+
+  
+}
+
+.button{
+    border-radius: 10px;
+    margin: 5px;
+
+}
